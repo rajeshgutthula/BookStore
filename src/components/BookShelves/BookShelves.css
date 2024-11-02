@@ -1,0 +1,251 @@
+.main-divcontainer {
+  width: 100%;
+  min-height: 100%;
+  background-color: #f8fafc;
+}
+
+.brandlogo {
+  min-height: 30px;
+  max-height: 40px;
+}
+
+.imagelogodiv {
+  width: 100%;
+}
+
+/* Ensure no horizontal scrolling occurs */
+body {
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.categories-div {
+  width: 15%; /* Default width for larger screens */
+  padding: 10px 0px 0px 50px;
+  background-color: #ffffff;
+}
+
+.categorieitems-div {
+  width: 100%;
+}
+
+.All-elements {
+  font-family: Inter;
+  color: #0284c7;
+  cursor: pointer;
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  text-align: left; /* Align text to the left */
+}
+
+.headingiteams {
+  font-family: Inter;
+  color: #64748b;
+  cursor: pointer;
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  text-align: left; /* Align text to the left */
+}
+
+.bookscontainer {
+  width: 80%;
+}
+
+.second-div {
+  width: 100%;
+  margin: 45px;
+}
+
+.second-main-div {
+  width: 100%;
+  display: flex;
+}
+
+.search-bar-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 40px 0px 30px;
+  max-height: 30px;
+}
+
+.text-div {
+  display: flex;
+}
+
+.input-group-text {
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 2px;
+}
+
+.cards-main-container {
+  padding-left: 30px;
+  padding-top: 25px;
+  width: 45%;
+}
+
+.card-image {
+  max-width: 133px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.books-details-div {
+  padding-left: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.rating-div {
+  display: flex;
+}
+
+.card-Div {
+  display: flex;
+  flex-direction: row;
+  width: 300px; /* Adjust this for larger screens */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.stars {
+  color: gold;
+}
+
+/* .card-Div:hover {
+  transform: rotateY(4deg) rotateX(10deg);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+} */
+.card-Div {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.card-Div:hover {
+  transform: scale(1.05); /* Slightly increase size */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+  background-color: #f0f8ff; /* Light blue background on hover */
+}
+
+/* Optional: Add a smooth transition for text color */
+.card-Div:hover .heading {
+  color: #0284c7; /* Change heading color on hover */
+}
+
+.card-Div:hover .descrition {
+  color: #555; /* Darker text for description on hover */
+}
+
+.font-for-all {
+  font-family: Inter;
+}
+
+.font-size {
+  font-size: small;
+}
+
+.heading {
+  color: #334155;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0px;
+  overflow-wrap: break-word;
+}
+
+.descrition {
+  font-family: Inter;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.dynamic-div {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping on larger screens */
+  justify-content: space-between; /* Space out cards on larger screens */
+}
+
+/* Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+  .categories-div {
+    width: 100%; /* Full width for categories */
+    padding: 10px; /* Add padding */
+  }
+
+  .categorieitems-div {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: space-between; /* Space items evenly */
+    padding: 0 10px; /* Add padding to the container */
+    gap: 10px; /* Add space between items */
+  }
+
+  .All-elements,
+  .headingiteams {
+    padding: 12px 8px; /* Add padding for each item */
+    border: 1px solid #0284c7; /* Blue outline */
+    border-radius: 12px; /* Rounder corners */
+    background-color: white; /* White background */
+    color: #0284c7; /* Blue text color */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Pointer cursor on hover */
+    flex: 1 1 calc(33.33% - 10px); /* Allow items to take up to 33.33% of the width, minus gap */
+    max-width: calc(33.33% - 10px); /* Ensure max width for each item */
+  }
+
+  .All-elements:hover,
+  .headingiteams:hover {
+    background-color: #0284c7; /* Change background on hover */
+    color: white; /* Change text color on hover */
+  }
+
+  .bookscontainer {
+    width: 100%; /* Full width for books container */
+  }
+
+  .books-details-div {
+    padding-left: 10px;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+
+  .second-main-div {
+    flex-direction: column; /* Stack categories and books vertically */
+    align-items: center; /* Center items */
+  }
+
+  .search-bar-div {
+    margin: 0; /* Remove margins */
+    width: 90%; /* Full width for the search bar */
+  }
+
+  .dynamic-div {
+    display: flex;
+    flex-direction: column; /* Stack cards vertically */
+    align-items: start; /* Align cards to the start */
+    width: 100%; /* Full width for dynamic div */
+  }
+
+  .cards-main-container {
+    width: 100%;
+  }
+
+  .card-Div {
+    width: 100%; /* Full width for cards */
+    margin: 10px 0; /* Space between cards */
+  }
+}
